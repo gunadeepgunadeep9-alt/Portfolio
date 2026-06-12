@@ -3,213 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ET Gunadeep | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>ET Gunadeep | E-Portfolio</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f5f7fa;
+    background:#f4f7fc;
     color:#333;
 }
 
-/* Header */
 header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(135deg,#0077b5,#00c6ff);
+    background:linear-gradient(135deg,#0f4c81,#1e88e5);
     color:white;
     text-align:center;
-    padding:20px;
+    padding:80px 20px;
 }
 
-.hero{
-    max-width:800px;
-}
-
-.hero img{
-    width:180px;
-    height:180px;
+.profile-img{
+    width:150px;
+    height:150px;
     border-radius:50%;
     border:5px solid white;
-    object-fit:cover;
     margin-bottom:20px;
+    object-fit:cover;
 }
 
-.hero h1{
-    font-size:3rem;
+header h1{
+    font-size:42px;
 }
 
-.hero h3{
-    font-weight:400;
-    margin:10px 0;
-}
-
-.hero p{
-    margin:15px 0;
-    font-size:1.1rem;
+header p{
+    font-size:20px;
+    margin-top:10px;
 }
 
 .btn{
     display:inline-block;
-    padding:12px 28px;
+    margin-top:20px;
+    padding:12px 25px;
     background:white;
-    color:#0077b5;
+    color:#1e88e5;
     text-decoration:none;
     border-radius:30px;
-    font-weight:600;
-    margin-top:15px;
+    font-weight:bold;
 }
 
-/* Sections */
 section{
-    padding:70px 10%;
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
 }
 
 .section-title{
     text-align:center;
-    font-size:2rem;
-    margin-bottom:40px;
-    color:#0077b5;
+    font-size:32px;
+    margin-bottom:30px;
+    color:#0f4c81;
 }
 
-/* About */
-.about{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-    line-height:1.8;
-}
-
-/* Education */
-.education-card{
+.card{
     background:white;
     padding:25px;
     margin-bottom:20px;
     border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.education-card h3{
-    color:#0077b5;
-}
-
-/* Skills */
 .skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
 }
 
 .skill{
-    background:white;
-    padding:20px;
+    background:#1e88e5;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+footer{
+    background:#0f4c81;
+    color:white;
     text-align:center;
-    border-radius:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.08);
-}
-
-/* Projects */
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-}
-
-.project-card{
-    background:white;
     padding:20px;
-    border-radius:15px;
-    box-shadow:0 3px 12px rgba(0,0,0,0.08);
-}
-
-.project-card h3{
-    color:#0077b5;
-}
-
-/* Contact */
-.contact{
-    text-align:center;
 }
 
 .contact a{
-    color:#0077b5;
+    color:#1e88e5;
     text-decoration:none;
-    font-weight:600;
-}
-
-/* Footer */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#0077b5;
-    color:white;
 }
 </style>
 </head>
+
 <body>
 
-<!-- Hero Section -->
 <header>
-    <div class="hero">
-        <img src="profile.jpg" alt="ET Gunadeep">
-        <h1>ET Gunadeep</h1>
-        <h3>B.Tech Artificial Intelligence Student</h3>
-        <p>
-            Passionate AI enthusiast and technology learner currently pursuing
-            B.Tech in Artificial Intelligence at REVA University.
-        </p>
-        <a href="#contact" class="btn">Contact Me</a>
-    </div>
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <h1>ET Gunadeep</h1>
+    <p>B.Tech Artificial Intelligence Student</p>
+    <p>REVA University, Bengaluru</p>
+
+    <a href="#contact" class="btn">Contact Me</a>
 </header>
 
-<!-- About -->
-<section>
+<section id="about">
     <h2 class="section-title">About Me</h2>
-    <div class="about">
+    <div class="card">
         <p>
-            I am an Artificial Intelligence student at REVA University with
-            a strong interest in Machine Learning, Data Science, Python
-            Programming, and Web Development. I enjoy building innovative
-            projects and continuously learning new technologies.
+            Hello! I'm ET Gunadeep, currently pursuing B.Tech in
+            Artificial Intelligence at REVA University. I am passionate
+            about AI, Machine Learning, Web Development, and emerging technologies.
+            I enjoy learning new skills and solving real-world problems using technology.
         </p>
     </div>
 </section>
 
-<!-- Education -->
-<section>
+<section id="education">
     <h2 class="section-title">Education</h2>
 
-    <div class="education-card">
+    <div class="card">
         <h3>REVA University</h3>
         <p>B.Tech - Artificial Intelligence</p>
         <p>2025 - Present</p>
     </div>
 
-    <div class="education-card">
+    <div class="card">
         <h3>Narayana Junior College</h3>
         <p>Intermediate (PCM)</p>
-        <p>2023 - 2025 | Grade: 87.5%</p>
+        <p>Grade: 87.5%</p>
+        <p>2023 - 2025</p>
     </div>
 
-    <div class="education-card">
+    <div class="card">
         <h3>Panchijanya Brilliance High School</h3>
-        <p>SSC</p>
-        <p>2022 - 2023 | Grade: 67%</p>
+        <p>SSC - General Studies</p>
+        <p>Grade: 67%</p>
+        <p>Sports Activities</p>
     </div>
 </section>
 
-<!-- Skills -->
-<section>
+<section id="skills">
     <h2 class="section-title">Skills</h2>
 
     <div class="skills">
@@ -219,50 +160,35 @@ footer{
         <div class="skill">HTML</div>
         <div class="skill">CSS</div>
         <div class="skill">JavaScript</div>
-        <div class="skill">Data Science</div>
-        <div class="skill">SQL</div>
+        <div class="skill">Data Analysis</div>
     </div>
 </section>
 
-<!-- Projects -->
-<section>
+<section id="projects">
     <h2 class="section-title">Projects</h2>
 
-    <div class="projects">
-        <div class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>
-                Developed an AI chatbot using Python and NLP techniques.
-            </p>
-        </div>
+    <div class="card">
+        <h3>AI Portfolio Website</h3>
+        <p>Developed a personal portfolio website showcasing education, skills, and projects.</p>
+    </div>
 
-        <div class="project-card">
-            <h3>Student Management System</h3>
-            <p>
-                Web-based application for managing student records.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>
-                Responsive personal portfolio built with HTML, CSS, and JavaScript.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Machine Learning Project</h3>
+        <p>Built ML models for prediction and data analysis using Python.</p>
     </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
     <h2 class="section-title">Contact</h2>
 
-    <div class="contact">
-        <p>Email: yourmail@example.com</p>
-        <p>Location: Bengaluru, Karnataka, India</p>
-        <p>
-            LinkedIn:
-            <a href="#">linkedin.com/in/etgunadeep</a>
-        </p>
+    <div class="card contact">
+        <p><strong>Name:</strong> ET Gunadeep</p>
+        <p><strong>Email:</strong>
+        <a href="mailto:gunadeepgunadeep9@gmail.com">
+        gunadeepgunadeep9@gmail.com
+        </a></p>
+
+        <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
     </div>
 </section>
 
